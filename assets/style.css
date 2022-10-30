@@ -1,45 +1,49 @@
-* {
+/* define variable colors */
+:root {
+  --background:  #bdd9f7;
+  --text: rgb(24, 6, 90); 
+  --hero: rgba(46, 206, 142, 1);
+  --textbacking: rgb(59, 18, 171)
+}
+
+/* universal selectors */
+  * {
     margin: 0;
     padding: 0; 
-    /* box-sizing: border-box; */
-}
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* color: var(--text); */
+  }
 
 /* header & navigation */
-header   {
-    background-color:  #E5DDCA;
+  .container-1   {
+    background-color: var(--hero);
     display: flex;
-    padding-bottom: 10px;
-    }
+    padding-bottom: 10px;  
+    justify-content: space-between;
 
-header h1 {
-    color: white;
-    background-color: green; 
-    padding: 0px 20px 0px 40px;
-    margin-top: 2px;    
-}
-     
- /* TODO: update navbar to incorporate flex */
- header nav {
-    margin: 12px 0;
   }
-  
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    }
+
+  h1 {
+    color: white;
+    background-color: var(--textbacking);
+    padding: 0px 20px 0px 40px;
+    margin-top: 2px;
+  }
 
   header nav ul li {
     display: inline;
+
   }
   
   header nav ul li a {
     margin: 0 30px;
     font-size: 18px;
-    color: red;
     text-decoration: none;
     border-bottom: 2px solid;
   }
 
+  /* hero, avatar, subtitle */
 .hero {
     background-image: url(https://cdn.pixabay.com/photo/2016/03/20/16/21/campus-1268899_960_720.jpg);  
 }
@@ -47,12 +51,30 @@ header nav ul {
 .hero img{
     margin-top: 10px;
     width: 15%;
+    border-radius: 50%;
 }
 
 .hero h2 {
     float: right;
     margin: 11%;
-    background-color: green;
-    padding: 10px;
-    color: white;
+    padding: .4%;
+    background-color: var(--textbacking);
+    color: white; 
 }
+
+/* style for main contents starts here */
+main {
+  background-color: var(--background);
+}
+
+  .container-2, .container-3, .container-4 {
+    display: flex;
+  }
+ 
+  .container-2 div, .container-3 div, .container-4 div {
+    border: 1px red dashed;
+  }
+
+  .box-L {
+    border-right: 4px black solid;
+  }
