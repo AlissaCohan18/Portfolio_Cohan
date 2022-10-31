@@ -83,7 +83,7 @@ main {
   .sub-container-3 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 12%
+    margin-left: 17.6%
   }
 
   .box-L {
@@ -92,7 +92,7 @@ main {
   }
 
 #biggie {
-  width: 80%;
+  width: 1200px;
   height: 500px;
   border: 5px var(--hero) solid;
   background-image: url(/assets/images/images.png);  
@@ -103,7 +103,7 @@ main {
   background-image: url(/assets/images/images.png);  
   display: block;
   margin: 20px 20px 20px 0px;
-  width: 980px;
+  width: 590px;
   height: 200px;
 
 }
