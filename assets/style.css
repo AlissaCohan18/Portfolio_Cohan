@@ -90,13 +90,13 @@ main {
   width: 1200px;
   height: 500px;
   border: 5px var(--hero) solid;
-  background-image: url(/assets/images/Horiseon_Refactoring.png);  
+  background-image: url(./images/Horiseon_Refactoring.png);  
   background-size: cover;
 }
 
 .box {
   border: 5px var(--hero) solid;
-  background-image: url(/assets/images/images.png);  
+  background-image: url(./images/images.png);  
   display: block;
   margin: 20px 20px 20px 0px;
   width: 590px;
