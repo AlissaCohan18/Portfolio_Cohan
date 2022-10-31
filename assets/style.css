@@ -65,7 +65,6 @@
 /* style for main contents starts here */
 main {
   background-color: var(--background);
-  /* height: 100%; */
   width: 100%;
 }
 
@@ -78,7 +77,7 @@ main {
   .sub-container-3 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15%
+    margin-left: 18.5%
   }
 
   .box-L {
@@ -91,7 +90,8 @@ main {
   width: 1200px;
   height: 500px;
   border: 5px var(--hero) solid;
-  background-image: url(/assets/images/images.png);  
+  background-image: url(/assets/images/Horiseon_Refactoring.png);  
+  background-size: cover;
 }
 
 .box {
@@ -107,6 +107,11 @@ div h4 {
   background-color: var(--hero);
   padding: 3%;
   float: left;
+  margin: 110px 0px 0px 0px;
+  font-size: 18px;
+}
+div h4 small {
+  font-size: 12px;
 }
 
 .container-4 div {
@@ -120,59 +125,52 @@ div h5 {
 
 
 @media screen and (max-width: 980px) {
-  #biggie {
-    width: 600px;
-    height: 250px;
-    border: 5px var(--hero) solid;
-    background-image: url(/assets/images/images.png);  
-    margin: 3.5%;
+    #biggie {
+      width: 600px;
+      height: 250px;
+      border: 5px var(--hero) solid;
+      background-image: url(/assets/images/images.png);  
+      margin: 3.5%;
+      }
+      .sub-container-3 {
+        margin: 3%;
+      }
+    .box {
+      border: 5px var(--hero) solid;
+      background-image: url(/assets/images/images.png);  
+      display: block;
+      margin: 0px 20px 20px 0px;
+      width: 300px;
+      height: 120px;
     }
-   
-    .sub-container-3 {
-      margin: 3%;
+    .box-L {
+      border-right: none;
     }
-
-   .box {
-    border: 5px var(--hero) solid;
-    background-image: url(/assets/images/images.png);  
-    display: block;
-    margin: 0px 20px 20px 0px;
-    width: 300px;
-    height: 120px;
-   }
-
-   .box-L {
-    border-right: none;
-   }
-   
-   .container-4 div h2 {
-     margin: 0;
-   }
-   
-   .container-4 div h5 {
-      margin: 0px 10px 0px 30px; 
-      font-weight: lighter;
+    .container-4 div h2 {
+      margin: 0;
     }
-
+    .container-4 div h5 {
+        margin: 0px 10px 0px 30px; 
+        font-weight: lighter;
+    }
 }
  
 
 @media screen and (max-width: 540px) {
-  #biggie {
-    width: 450px;
-    height: 200px;
-    border: 5px var(--hero) solid;
-    background-image: url(/assets/images/images.png);  
-    margin: 3.5%;
+    #biggie {
+      width: 450px;
+      height: 200px;
+      border: 5px var(--hero) solid;
+      background-image: url(/assets/images/images.png);  
+      margin: 3.5%;
+      }
+      header nav ul li a  {
+      display:flex;
+      flex-direction: column;
+      border-bottom: none;
+      margin-bottom: 2px;
     }
-    header nav ul li a  {
-    display:flex;
-    flex-direction: column;
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .container-4 div {
-    flex-direction: column;
-  }
+    .container-4 div {
+      flex-direction: column;
+    }
 }
