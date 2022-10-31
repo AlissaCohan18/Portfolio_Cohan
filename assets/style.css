@@ -105,7 +105,6 @@ main {
   margin: 20px 20px 20px 0px;
   width: 590px;
   height: 200px;
-
 }
 
 div h4 {
@@ -118,9 +117,48 @@ div h4 {
   display: flex;
   justify-content: space-evenly;
 }
-/* 
-@media screen and (max-width: 768px) {
- header {
-    background-color: black;
+
+
+@media screen and (max-width: 980px) {
+  #biggie {
+    width: 600px;
+    height: 250px;
+    border: 5px var(--hero) solid;
+    background-image: url(/assets/images/images.png);  
+    margin: 3.5%;
+    }
+   
+    .sub-container-3 {
+      margin: 3%;
+    }
+
+   .box {
+    border: 5px var(--hero) solid;
+    background-image: url(/assets/images/images.png);  
+    display: block;
+    margin: 0px 20px 20px 0px;
+    width: 300px;
+    height: 120px;
+   }
+
+   .box-L {
+    border-right: none;
+ }
+}
+ 
+
+@media screen and (max-width: 540px) {
+  #biggie {
+    width: 450px;
+    height: 200px;
+    border: 5px var(--hero) solid;
+    background-image: url(/assets/images/images.png);  
+    margin: 3.5%;
+    }
+    header nav ul li a  {
+    display:flex;
+    flex-direction: column;
+    border-bottom: none;
+    margin-bottom: 2px;
   }
-} */
+}
