@@ -8,36 +8,36 @@
 
 /* universal selectors */
   * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* color: var(--text); */
+    color: var(--text);
   }
 
 /* header & navigation */
   .container-1   {
     background-color: var(--hero);
     display: flex;
-    padding-bottom: 10px;  
     justify-content: space-between;
-
   }
 
   h1 {
     color: white;
     background-color: var(--textbacking);
     padding: 0px 20px 0px 40px;
-    margin-top: 2px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 45px;
   }
 
   header nav ul li {
     display: inline;
-
+  
   }
   
   header nav ul li a {
-    margin: 0 30px;
+    margin: 0px 10px;
     font-size: 18px;
     text-decoration: none;
     border-bottom: 2px solid;
@@ -46,17 +46,18 @@
   /* hero, avatar, subtitle */
 .hero {
     background-image: url(https://cdn.pixabay.com/photo/2016/03/20/16/21/campus-1268899_960_720.jpg);  
-}
+    background-size: cover;
+  }
  
 .hero img{
     margin-top: 10px;
-    width: 15%;
+    width: 18%;
     border-radius: 50%;
 }
 
 .hero h2 {
     float: right;
-    margin: 11%;
+    margin: 6% 2%;
     padding: .4%;
     background-color: var(--textbacking);
     color: white; 
@@ -65,16 +66,61 @@
 /* style for main contents starts here */
 main {
   background-color: var(--background);
+  /* height: 100%; */
+  width: 100%;
 }
 
   .container-2, .container-3, .container-4 {
     display: flex;
+    flex-wrap: wrap;
+    
   }
  
-  .container-2 div, .container-3 div, .container-4 div {
-    border: 1px red dashed;
+  .container-2 div, .sub-container-3 div, .container-4 div {
+    /* border: 1px red dashed; */
+  }
+
+  .sub-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12%
   }
 
   .box-L {
-    border-right: 4px black solid;
+    width: 300px; 
+    border-right: 3px black solid;
   }
+
+#biggie {
+  width: 80%;
+  height: 500px;
+  border: 5px var(--hero) solid;
+  background-image: url(/assets/images/images.png);  
+}
+
+.box {
+  border: 5px var(--hero) solid;
+  background-image: url(/assets/images/images.png);  
+  display: block;
+  margin: 20px 20px 20px 0px;
+  width: 980px;
+  height: 200px;
+
+}
+
+div h4 {
+  background-color: var(--hero);
+  padding: 3%;
+  float: left;
+}
+
+.container-4-a {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* 
+@media screen and (max-width: 768px) {
+ header {
+    background-color: black;
+  }
+} */
