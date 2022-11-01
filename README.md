@@ -1,16 +1,18 @@
+# Alissa's Portfolio
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+## Description
 
-
-
-### Technical Acceptance Criteria: 40%
-Links: resume, e-mail, github (lost clickability)
-
-### Repository Quality: 13%
-quality comments
-README with description, screenshot, link to deployed application.
+The portfolio page was built to put my work and experience on display. This will be a living page that will evolve as I work on more websites and gain additional experience. 
 
 
-You are required to submit BOTH of the following for review:
-* The URL of the deployed application.
-* The URL of the GitHub repository that contains your code.
+## Screenshot
+![Alt text](/assets/images/WebSite_Snip.png)
+
+## Deployed Application Link
+
+https://alissacohan18.github.io/portfolio_Cohan/
+
+
+## Credits
+
+Picture from Horiseon website provided by: GT Coding Boot Camp / Boot Spot

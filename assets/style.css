@@ -31,9 +31,12 @@
     font-size: 45px;
   }
 
+.box-1-2 {
+  padding: 15px 15px 0px 0px;
+}
+
   header nav ul li {
     display: inline;
-  
   }
   
   header nav ul li a {
@@ -66,7 +69,6 @@
 /* style for main contents starts here */
 main {
   background-color: var(--background);
-  /* width: 100%; */
 }
 
   .container-2, .container-3, .container-4 {
@@ -96,14 +98,14 @@ main {
   .sub-container-3 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 18.5%;
+    margin-left: 12.2%;
   }
 
   .box-L {
     width: 200px; 
     border-right: 3px black solid;
     height: 80%;
-    margin: 10px 10px 0px 0px;
+    margin: 5px 10px 0px 0px;
   }
 
 #biggie {
