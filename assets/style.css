@@ -85,76 +85,78 @@ main {
   .container-4 {
     padding-bottom: 20px;
   }
-
-  #contact-me {
-    padding-top: 10px;
-  }
-
-  .box-2-1 {
-    flex:1;
-    font-size: larger;
-}
-
-  .sub-container-3 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 12.2%;
-  }
-
+  
   .box-L {
     width: 200px; 
     border-right: 3px black solid;
     height: 80%;
     margin: 5px 10px 0px 0px;
   }
-
-#biggie {
-  width: 1200px;
-  height: 500px;
-  border: 5px var(--hero) solid;
-  background-image: url(./images/Horiseon_Refactoring.png);  
-  background-size: cover;
-}
-
-.box {
-  border: 5px var(--hero) solid;
-  background-image: url(./images/images.png);  
-  display: block;
-  margin: 20px 20px 20px 0px;
-  width: 590px;
-  height: 200px;
-}
-
-.box:hover {
-  filter: brightness(150%);  
-}
-
-#biggie:hover {
-  filter: brightness(150%);
-}
-
-div h4 {
-  background-color: var(--hero);
-  padding: 3%;
-  float: left;
-  margin-top: 100px;
-  font-size: 18px;
-}
-div h4 small {
-  font-size: 12px;
-}
-
-.container-4 div {
-  display: flex;
-}
-
-div a {
-  font-size: 20px;
-  margin: 20px 0px 10px 180px;
-}
-
-
-@media screen and (max-width: 980px) {
+  
+  .box-2-1 {
+    flex:1;
+    font-size: larger;
+  }
+  
+  .sub-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12.2%;
+  }
+  
+  /* work section: defines look of the big and subsequent project cards */
+  #biggie {
+    width: 1200px;
+    height: 500px;
+    border: 5px var(--hero) solid;
+    background-image: url(./images/Horiseon_Refactoring.png);  
+    background-size: cover;
+  }
+  
+  .box {
+    border: 5px var(--hero) solid;
+    background-image: url(./images/images.png);  
+    display: block;
+    margin: 20px 20px 20px 0px;
+    width: 590px;
+    height: 200px;
+  }
+  
+  .box:hover {
+    filter: brightness(150%);  
+  }
+  
+  #biggie:hover {
+    filter: brightness(150%);
+  }
+  
+ .container-3 div h4 {
+    background-color: var(--hero);
+    padding: 3%;
+    float: left;
+    margin-top: 100px;
+    font-size: 18px;
+  }
+  .container-3 div h4 small {
+    font-size: 12px;
+  }
+  
+  /* Contact me  */
+  .container-4 div {
+    display: flex;
+  }
+  
+  #contact-me {
+    padding-top: 10px;
+  }
+  
+  .container-4 div a {
+    font-size: 20px;
+    margin: 20px 0px 10px 180px;
+  }
+  
+  /* adjustments for common screen sizes: 980, (768 still uses 980 style), and 540 */
+  @media screen and (max-width: 980px) {
     #biggie {
       width: 600px;
       height: 250px;
