@@ -112,7 +112,7 @@ main {
     background-image: url(./images/Horiseon_Refactoring.png);  
     background-size: cover;
   }
-  
+
   .box {
     border: 5px var(--hero) solid;
     background-image: url(./images/images.png);  
@@ -122,6 +122,10 @@ main {
     height: 200px;
   }
   
+  #weatherMann {
+    background-image: url(./images/weatherMann.png);  
+  }
+
   .box:hover {
     filter: brightness(150%);  
   }
