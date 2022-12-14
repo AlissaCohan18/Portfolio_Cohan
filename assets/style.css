@@ -1,69 +1,70 @@
 /* define variable colors */
 :root {
-  --background:  #bdd9f7;
-  --text: rgb(24, 6, 90); 
+  --background: #bdd9f7;
+  --text: rgb(24, 6, 90);
   --hero: rgba(46, 206, 142, 1);
-  --textbacking: rgb(59, 18, 171)
+  --textbacking: rgb(59, 18, 171);
 }
 
 /* universal selectors */
-  * {
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--text);
-    margin: 0;
-  }
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text);
+  margin: 0;
+}
 
 /* header & navigation */
-  .container-1   {
-    background-color: var(--hero);
-    display: flex;
-    justify-content: space-between;
-  }
+.container-1 {
+  background-color: var(--hero);
+  display: flex;
+  justify-content: space-between;
+}
 
-  h1 {
-    color: white;
-    background-color: var(--textbacking);
-    padding: 0px 20px 0px 40px;
-    margin-top: 4px;
-    margin-bottom: 20px;
-    font-size: 45px;
-  }
+h1 {
+  color: white;
+  background-color: var(--textbacking);
+  padding: 0px 20px 0px 40px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
 
 .box-1-2 {
   padding: 15px 15px 0px 0px;
 }
 
-  header nav ul li {
-    display: inline;
-  }
-  
-  header nav ul li a {
-    margin: 0px 10px;
-    font-size: 18px;
-    text-decoration: none;
-    border-bottom: 2px solid;
-  }
+header nav ul li {
+  display: inline;
+}
 
-  /* hero, avatar, subtitle */
+header nav ul li a {
+  margin: 0px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+/* hero, avatar, subtitle */
 .hero {
-    background-image: url(https://cdn.pixabay.com/photo/2016/03/20/16/21/campus-1268899_960_720.jpg);  
-    background-size: cover;
-  }
- 
-.hero img{
-    margin-top: 10px;
-    width: 18%;
-    border-radius: 50%;
+  background-image: url(https://cdn.pixabay.com/photo/2016/03/20/16/21/campus-1268899_960_720.jpg);
+  background-size: cover;
+}
+
+.hero img {
+  margin-top: 10px;
+  width: 18%;
+  border-radius: 50%;
 }
 
 .hero h2 {
-    float: right;
-    margin: 6% 2%;
-    padding: .4%;
-    background-color: var(--textbacking);
-    color: white; 
+  float: right;
+  margin: 6% 2%;
+  padding: 0.4%;
+  background-color: var(--textbacking);
+  color: white;
 }
 
 /* style for main contents starts here */
@@ -71,155 +72,179 @@ main {
   background-color: var(--background);
 }
 
-  .container-2, .container-3, .container-4 {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 10px; 
-  }
+.container-2,
+.container-3,
+.container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
 
-  .container-2, .container-3 {
-    margin-bottom: 10px;
-    padding-top: 20px;
-  }
- 
-  .container-4 {
-    padding-bottom: 20px;
-  }
-  
-  .box-L {
-    width: 200px; 
-    border-right: 3px black solid;
-    height: 80%;
-    margin: 5px 10px 0px 0px;
-  }
-  
-  .box-2-1 {
-    flex:1;
-    font-size: larger;
-  }
-  
-  .sub-container-3 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 12.2%;
-  }
-  
-  /* work section: defines look of the big and subsequent project cards */
+.container-2,
+.container-3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.container-4 {
+  padding-bottom: 20px;
+}
+
+.box-L {
+  width: 200px;
+  border-right: 3px black solid;
+  height: 80%;
+  margin: 5px 10px 0px 0px;
+}
+
+.box-2-1 {
+  flex: 1;
+  font-size: larger;
+}
+
+.sub-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12.2%;
+}
+
+/* work section: defines look of the big and subsequent project cards */
+#biggie {
+  width: 1200px;
+  height: 500px;
+  border: 5px var(--hero) solid;
+  background-image: url(./images/weather_snip.png);
+  background-size: cover;
+}
+
+.box {
+  border: 5px var(--hero) solid;
+  background-image: url(./images/images.png);
+  display: block;
+  margin: 20px 20px 20px 0px;
+  width: 590px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#weatherMann {
+  background-image: url(./images/weatherMann.png);
+}
+#dayCalendar {
+  background-image: url(./images/dayPlanner_snip.png);
+}
+#taskMasterPro {
+  background-image: url(./images/taskMasterPro_Snip.png);
+}
+#quizzer {
+  background-image: url(./images/quizz_snip.png);
+}
+#taskinator {
+  background-image: url(./images/taskinator_snip.png);
+}
+#password {
+  background-image: url(./images/password2_snip.png);
+}
+#taskinator {
+  background-image: url(./images/taskinator_snip.png);
+}
+#horiseon {
+  background-image: url(./images/Horiseon_Refactoring.png);
+}
+
+.box:hover {
+  filter: brightness(80%);
+}
+
+#biggie:hover {
+  filter: brightness(80%);
+}
+
+.container-3 div h4 {
+  background-color: var(--hero);
+  padding: 3%;
+  float: left;
+  margin-top: 100px;
+  font-size: 18px;
+}
+.container-3 div h4 small {
+  font-size: 12px;
+}
+
+/* Contact me  */
+.container-4 div {
+  display: flex;
+}
+
+#contact-me {
+  padding-top: 10px;
+}
+
+.container-4 div a {
+  font-size: 20px;
+  margin: 20px 0px 10px 180px;
+}
+
+/* adjustments for common screen sizes: 980, (768 still uses 980 style), and 540 */
+@media screen and (max-width: 980px) {
   #biggie {
-    width: 1200px;
-    height: 500px;
-    border: 5px var(--hero) solid;
-    background-image: url(./images/Horiseon_Refactoring.png);  
-    background-size: cover;
+    width: 600px;
+    height: 250px;
+    margin-bottom: 20px;
   }
-
+  .sub-container-3 {
+    margin-left: 16.5%;
+  }
   .box {
-    border: 5px var(--hero) solid;
-    background-image: url(./images/images.png);  
-    display: block;
-    margin: 20px 20px 20px 0px;
-    width: 590px;
-    height: 200px;
+    margin: 0px 20px 20px 0px;
+    width: 300px;
+    height: 120px;
   }
-  
-  #weatherMann {
-    background-image: url(./images/weatherMann.png);  
+  .box-L {
+    border-right: none;
+    width: 150px;
   }
-
-  .box:hover {
-    filter: brightness(150%);  
+  .container-3 div h4 {
+    margin-top: 50px;
+    padding: 1.5%;
   }
-  
-  #biggie:hover {
-    filter: brightness(150%);
+  .container-4 div h2 {
+    margin: 0;
   }
-  
- .container-3 div h4 {
-    background-color: var(--hero);
-    padding: 3%;
-    float: left;
-    margin-top: 100px;
-    font-size: 18px;
-  }
-  .container-3 div h4 small {
-    font-size: 12px;
-  }
-  
-  /* Contact me  */
-  .container-4 div {
-    display: flex;
-  }
-  
-  #contact-me {
+  .container-4 div a {
+    margin: 0px 10px 0px 30px;
+    font-weight: lighter;
     padding-top: 10px;
   }
-  
-  .container-4 div a {
-    font-size: 20px;
-    margin: 20px 0px 10px 180px;
-  }
-  
-  /* adjustments for common screen sizes: 980, (768 still uses 980 style), and 540 */
-  @media screen and (max-width: 980px) {
-    #biggie {
-      width: 600px;
-      height: 250px;
-      margin-bottom: 20px;
-      }
-      .sub-container-3 {
-        margin-left: 16.5%;
-      }
-    .box {
-      margin: 0px 20px 20px 0px;
-      width: 300px;
-      height: 120px;
-    }
-    .box-L {
-      border-right: none;
-      width: 150px;
-    }
-    .container-3 div h4 {
-      margin-top: 50px;
-      padding: 1.5%;
-    }
-    .container-4 div h2 {
-      margin: 0;
-    
-    }
-    .container-4 div a {
-        margin: 0px 10px 0px 30px; 
-        font-weight: lighter;
-        padding-top: 10px;
-      }
 }
- 
 
 @media screen and (max-width: 540px) {
-    #biggie {
-      width: 450px;
-      height: 200px;
-      margin: 10px 0px 20px 15px;
-      }
-      header nav ul li a  {
-      display:flex;
-      flex-direction: column;
-      border-bottom: none;
-      margin-bottom: 2px;
-    }
-    .container-2 {
-      flex-direction: column;
-      padding-top: 5px;
-    }
-    .box-2-1 {
-      padding-top: 5px
-    }
-    .container-2 p {
-      margin-left: 20px;
-    }
-    .container-4 {
-      flex-direction: column;
-    }
-    .container-4 div {
-      flex-direction: column;
-    }
+  #biggie {
+    width: 450px;
+    height: 200px;
+    margin: 10px 0px 20px 15px;
+  }
+  header nav ul li a {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+  .container-2 {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  .box-2-1 {
+    padding-top: 5px;
+  }
+  .container-2 p {
+    margin-left: 20px;
+  }
+  .container-4 {
+    flex-direction: column;
+  }
+  .container-4 div {
+    flex-direction: column;
+  }
 }
