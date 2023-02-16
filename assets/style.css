@@ -113,7 +113,7 @@ main {
   width: 1200px;
   height: 500px;
   border: 5px var(--hero) solid;
-  background-image: url(./images/weather_snip.png);
+  background-image: url(./images/coffee_snip.png);
   background-size: cover;
 }
 
